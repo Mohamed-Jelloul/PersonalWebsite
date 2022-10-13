@@ -25,6 +25,7 @@ function App() {
                 <img src={imgUrl} className="App-logo" alt="logo" />
                 <p>{description}</p>
                 <button onClick={fetchImage}>Randomize Image</button>
+                <p>deployment test</p>
             </header>
         </div>
     );
