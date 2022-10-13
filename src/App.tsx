@@ -13,7 +13,7 @@ function App() {
     }
 
     const fetchImage = async () => {
-        let index = Math.floor(Math.random()*3)
+        let index = Math.floor(Math.random()*4)
         console.log(index)
         // @ts-ignore
         setImageUrl(imgUrls[index])
