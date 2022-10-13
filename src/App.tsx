@@ -6,12 +6,14 @@ function App() {
     let [imgUrl, setImageUrl] = useState("https://simosandboxbucket.s3.us-east-2.amazonaws.com/IMG_0828.jpg")
     let [description, setDescription] = useState("The Best Programmer on Earth")
     let imgUrls = {
-        0: "https://simosandboxbucket.s3.us-east-2.amazonaws.com/IMG_0828.jpg",
-        1: "https://simosandboxbucket.s3.us-east-2.amazonaws.com/IMG_0906.jpg"
+        0: "https://simosandboxbucket.s3.us-east-2.amazonaws.com/Moi.jpg",
+        1: "https://simosandboxbucket.s3.us-east-2.amazonaws.com/Twe.jpg",
+        2: "https://simosandboxbucket.s3.us-east-2.amazonaws.com/Neil.jpg",
+        3: "https://simosandboxbucket.s3.us-east-2.amazonaws.com/Gui.jpg"
     }
 
     const fetchImage = async () => {
-        let index = Math.round(Math.random()%2)
+        let index = Math.round(Math.random()*3)
         console.log(index)
         // @ts-ignore
         setImageUrl(imgUrls[index])
