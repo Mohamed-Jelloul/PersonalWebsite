@@ -1,0 +1,4 @@
+services:
+  personal-website:
+    build: ./
+    container
