@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
     let [description, setDescription] = useState("The Best Programmer on Earth")
 
     function fetchImage() {
-        fetch('http://expressbackend-env.eba-fwicumfm.us-east-2.elasticbeanstalk.com/get_random_image_url')
+        fetch('https://api.mohamedjelloul.com/get_random_image_url')
             .then((response) => response.json())
             .then((data) => {
                 setImageUrl(data)
@@ -21,7 +20,7 @@ function App() {
             <header className="App-header">
                 <img src={imgUrl} className="App-logo" alt="logo" />
                 <p>{description}</p>
-                <button onClick={fetchImage}>Hello</button>
+                <button onClick={fetchImage}>Get Random Image</button>
             </header>
         </div>
     );
