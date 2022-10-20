@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {CookiesProvider, useCookies} from "react-cookie";
 import {Button, ButtonGroup, TextField} from '@mui/material';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+
 
 function App() {
     let [imgUrl, setImageUrl] = useState("https://simosandboxbucket.s3.us-east-2.amazonaws.com/Moi.jpg")
@@ -25,17 +27,18 @@ function App() {
 
     return (
         <CookiesProvider>
+            <Navbar></Navbar>
             <div className="App">
                 <header className="App-header">
                     <img src={imgUrl} className="App-logo" alt="logo" />
-                    <p>Hello {cookie['name']}!</p>
-                    <TextField id="outlined-basic" label="Enter Name" variant="filled" onChange={(e) => {
-                        setName(e.target.value)
-                    }}/>
-                    <ButtonGroup sx={{"marginTop": 5}} variant="contained" aria-label="outlined primary button group">
-                        <Button onClick={handleName}>Set Name</Button>
-                        <Button onClick={fetchImage}>Random Image</Button>
-                    </ButtonGroup>
+                    {/*<p>Hello {cookie['name']}!</p>*/}
+                    {/*<TextField id="outlined-basic" label="Enter Name" variant="filled" onChange={(e) => {*/}
+                    {/*    setName(e.target.value)*/}
+                    {/*}}/>*/}
+                    {/*<ButtonGroup sx={{"marginTop": 5}} variant="contained" aria-label="outlined primary button group">*/}
+                    {/*    <Button onClick={handleName}>Set Name</Button>*/}
+                    {/*    <Button onClick={fetchImage}>Random Image</Button>*/}
+                    {/*</ButtonGroup>*/}
                 </header>
             </div>
         </CookiesProvider>

@@ -1,0 +1,25 @@
+body {
+    background-color: #3C4048;
+    color: #FFFFFF;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-box {
+    width: calc(100%/3);
+    text-align: center;
+    display: inline-block;
+    padding: 30px;
+    font-size: 50px;
+    transition: font-size 0.5s;
+}
+
+.navbar-box:hover {
+    font-size: 100px;
+    transition: font-size 0.5s;
+}
