@@ -23,3 +23,7 @@ body {
     font-size: 100px;
     transition: font-size 0.5s;
 }
+
+.links {
+    color: #FFFFFF;
+}
